@@ -21,8 +21,8 @@ export const HEADER_LIST = [
     link: "#roadmap",
   },
   {
-    title: "About",
-    link: "#about",
+    title: "Team",
+    link: "#team",
   },
   {
     title: "Faq",

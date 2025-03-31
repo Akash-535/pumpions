@@ -1,4 +1,5 @@
 "use client";
+import BackToTop from "@/common/BackToTop";
 import Footer from "@/common/Footer";
 import ClubMembership from "@/components/ClubMembership";
 import FAQ from "@/components/FAQ";
@@ -19,6 +20,7 @@ export default function Home() {
       <OgPumpions />
       <FAQ />
       <Footer />
+      <BackToTop />
     </>
   );
 }

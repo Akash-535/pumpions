@@ -7,7 +7,10 @@ const FAQ = () => {
     setOpen(open === index ? null : index);
   };
   return (
-    <div className="max-w-[1920px] mx-auto bg-[url(/assets/images/faq-bg.webp)] bg-cover bg-center bg-no-repeat lg:min-h-[942px] flex flex-col justify-center items-center lg:-mt-16 max-lg:mt-[53px] max-md:mt-[68px] max-lg:pt-[97px] max-lg:pb-[168px] max-md:pb-[49px] max-md:pt-[37px]">
+    <div
+      id="faq"
+      className="max-w-[1920px] mx-auto bg-[url(/assets/images/faq-bg.webp)] bg-cover bg-center bg-no-repeat lg:min-h-[942px] flex flex-col justify-center items-center lg:-mt-16 max-lg:mt-[53px] max-md:mt-[68px] max-lg:pt-[97px] max-lg:pb-[168px] max-md:pb-[49px] max-md:pt-[37px] overflow-hidden"
+    >
       <h2 className="text-32 text-white leading-202 uppercase text-center max-md:text-2xl pb-[46px] max-lg:pb-[50px] max-md:pb-[15px]">
         Faq
       </h2>

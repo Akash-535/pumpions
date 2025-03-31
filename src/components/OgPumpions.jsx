@@ -11,7 +11,10 @@ import "swiper/css/pagination";
 
 const OgPumpions = () => {
   return (
-    <div className="max-w-[1135px] mx-auto flex justify-center items-center flex-col px-4 overflow-hidden">
+    <div
+      id="team"
+      className="max-w-[1135px] mx-auto flex justify-center items-center flex-col px-4 overflow-hidden"
+    >
       <h2 className="text-32 text-white leading-202 uppercase text-center max-md:text-2xl pb-[79px] max-lg:pb-[75px] max-md:pb-[30px]">
         OG PUMPIONS
       </h2>

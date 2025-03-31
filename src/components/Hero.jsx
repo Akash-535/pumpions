@@ -21,7 +21,10 @@ const Hero = () => {
         src="/assets/images/cloud.webp"
         alt="cloud img"
       />
-      <div className="flex flex-col justify-center w-full items-center pt-[71px] max-md:pt-10">
+      <div
+        id="home"
+        className="flex flex-col justify-center w-full items-center pt-[71px] max-md:pt-10"
+      >
         <Image
           width={890}
           height={225.72}
