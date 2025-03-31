@@ -38,7 +38,7 @@ const PumpionsFaq = () => {
               </span>
             </div>
             <div
-              className={`duration-500 ease-linear overflow-hidden px-1 max-sm:max-w-[320px] ${
+              className={`duration-500 ease-linear overflow-hidden px-1 max-sm:max-w-[320px] mr-auto ${
                 open === i ? "max-h-12 h-full" : "max-h-0 min-h-0"
               }`}
             >
