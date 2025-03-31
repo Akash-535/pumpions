@@ -4,6 +4,8 @@
 @theme {
   --color-yellow-v1: #ffec37;
   --color-dark-blue-v1: #28424f;
+  --color-orange-v1: #e8770e;
+  --color-orange-v2: #fca32b;
 
   --text-6: 6px;
   --text-32: 32px;
@@ -26,4 +28,16 @@ body {
 
 .swiper-pagination-bullet {
   background-color: #ffffff !important;
+}
+
+@media (max-width: 576.98px) {
+  .footer-media-icon svg {
+    width: 15.98px;
+    height: 15.98px;
+  }
+
+  .faq-icon svg {
+    width: 7.31px;
+    height: 7.93px;
+  }
 }

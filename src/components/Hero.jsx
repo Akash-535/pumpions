@@ -5,7 +5,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="max-xl:px-8 max-md:px-4 pt-[30px] max-lg:pt-5 min-h-screen bg-[url('/assets/images/hero-bg.webp')] bg-cover bg-center bg-no-repeat relative min-h-[854px] overflow-hidden">
+    <div className="max-xl:px-8 max-md:px-4 pt-[30px] max-lg:pt-5 xl:min-h-[853px] min-h-screen bg-[url('/assets/images/hero-bg.webp')] bg-cover bg-center bg-no-repeat relative min-h-[854px] overflow-hidden max-w-[1920px] mx-auto max-md:min-h-[400px]">
       <Header />
       <Image
         width={166.34}

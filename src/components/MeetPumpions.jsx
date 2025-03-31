@@ -6,7 +6,7 @@ import React from "react";
 const MeetPumpions = () => {
   return (
     <div className="max-w-[1140px] mx-auto pt-[150px] max-xl:pt-32 max-lg:pt-[101px] max-md:pt-5 pb-11 max-lg:pb-[84px] max-md:pb-[42px] flex justify-center items-center max-lg:px-8 max-md:px-4">
-      <div className="w-full min-h-[333px] relative  flex items-center justify-center max-lg:min-h-[318px] max-md:min-h-[530px]">
+      <div className="w-full min-h-[333px] relative z-[1] flex items-center justify-center max-lg:min-h-[318px] max-md:min-h-[530px]">
         <Image
           width={9999}
           height={333}

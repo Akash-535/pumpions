@@ -1,4 +1,11 @@
-import { DiscordIcon, MediumIcon, TwitterIcon } from "./icons";
+import {
+  DiscordIcon,
+  DiscordWhiteIcon,
+  MediumIcon,
+  MediumWhiteIcon,
+  TwitterIcon,
+  TwitterWhiteIcon,
+} from "./icons";
 
 export const HEADER_LIST = [
   {
@@ -34,6 +41,21 @@ export const MEDIA_ICONS_LIST = [
   },
   {
     icon: <MediumIcon />,
+    link: "https://www.medium.com",
+  },
+];
+
+export const MEDIA_ICONS_LIST_TWO = [
+  {
+    icon: <DiscordWhiteIcon />,
+    link: "https://www.discord.com",
+  },
+  {
+    icon: <TwitterWhiteIcon />,
+    link: "https://www.twitter.com",
+  },
+  {
+    icon: <MediumWhiteIcon />,
     link: "https://www.medium.com",
   },
 ];
@@ -89,5 +111,28 @@ export const CLUB_MEMNERSHIP_LIST = [
     icon: "/assets/images/pixel-treasure.webp",
     title: "COMMUNITY FUNDING",
     description: "10% of the royalties to support community-led projects.",
+  },
+];
+
+export const OG_PUMPIONS_LIST = [
+  {
+    image: "/assets/images/og-img-one.webp",
+    title: "Miguel",
+    about: "(Founder)",
+  },
+  {
+    image: "/assets/images/og-img-two.webp",
+    title: "Raphael",
+    about: "(Developer) ",
+  },
+  {
+    image: "/assets/images/og-img-three.webp",
+    title: "Filipe",
+    about: "(Business) ",
+  },
+  {
+    image: "/assets/images/og-img-four.webp",
+    title: "Azula",
+    about: "(Artist) ",
   },
 ];

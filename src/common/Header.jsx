@@ -1,4 +1,8 @@
-import { HEADER_LIST, MEDIA_ICONS_LIST } from "@/utils/helper";
+import {
+  HEADER_LIST,
+  MEDIA_ICONS_LIST,
+  MEDIA_ICONS_LIST_TWO,
+} from "@/utils/helper";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -29,7 +33,7 @@ const Header = () => {
             />
           </Link>
           <div
-            className={`flex items-center gap-8 max-lg:flex-col max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:top-0 max-lg:h-full max-lg:bg-dark-blue-v1 duration-300 ease-linear max-md:z-10 ${
+            className={`flex items-center gap-8 max-lg:flex-col max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:top-0 max-lg:h-full max-lg:bg-dark-blue-v1 duration-300 ease-linear max-md:z-20 ${
               open ? "max-lg:right-0" : "max-lg:-right-full"
             }`}
           >
@@ -38,13 +42,13 @@ const Header = () => {
                 onClick={() => setOpen(false)}
                 key={i}
                 href={obj.link}
-                className="relative pb-0.5 leading-130 font-normal text-base uppercase after:absolute after:content-'' after:h-[5px] after:-bottom-0.5 after:left-0 after:bg-yellow-v1 after:w-0 hover:after:w-full after:duration-300 after:ease-linear "
+                className="relative pb-0.5 leading-130 font-normal text-base uppercase after:absolute after:content-'' after:h-[5px] after:-bottom-0.5 after:left-0 after:bg-yellow-v1 after:w-0 hover:after:w-full after:duration-300 after:ease-linear max-lg:text-white"
               >
                 {obj.title}
               </Link>
             ))}
             <div className="flex gap-[11px] items-center md:hidden">
-              {MEDIA_ICONS_LIST.map((obj, i) => (
+              {MEDIA_ICONS_LIST_TWO.map((obj, i) => (
                 <Link
                   key={i}
                   onClick={() => setOpen(false)}
@@ -72,11 +76,11 @@ const Header = () => {
           </div>
           <div
             onClick={() => setOpen(!open)}
-            className="flex flex-col gap-1.5 justify-center items-end cursor-pointer lg:hidden relative z-20"
+            className="flex flex-col gap-1.5 justify-center items-end cursor-pointer lg:hidden relative z-30"
           >
             <span
-              className={`w-[42.75px] bg-black h-1.5 duration-300 ease-linear ${
-                open ? " rotate-45 translate-y-[11px]" : ""
+              className={`w-[42.75px] h-1.5 duration-300 ease-linear ${
+                open ? " rotate-45 translate-y-[11px] bg-white" : "bg-black"
               }`}
             ></span>
             <span
@@ -85,8 +89,10 @@ const Header = () => {
               } `}
             ></span>
             <span
-              className={`w-[21.35px] bg-black h-1.5 duration-300 ease-linear ${
-                open ? "-rotate-45 -translate-y-3 w-[42.75px]" : ""
+              className={`w-[21.35px] h-1.5 duration-300 ease-linear ${
+                open
+                  ? "-rotate-45 -translate-y-3 w-[42.75px] bg-white"
+                  : "bg-black"
               }`}
             ></span>
           </div>

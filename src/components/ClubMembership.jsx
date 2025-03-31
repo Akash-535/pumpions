@@ -3,18 +3,17 @@ import { CLUB_MEMNERSHIP_LIST } from "@/utils/helper";
 import Image from "next/image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const ClubMembership = () => {
   return (
-    <div className="relative pb-[102px] max-lg:pb-[127px] max-md:pb-[50px]">
+    <div className="relative pb-[102px] max-lg:pb-[127px] max-md:pb-[50px] max-w-[1920px] mx-auto">
       <Image
         width={1920}
         height={147}
-        className="w-full absolute 2xl:-top-[11%] top-[-8%] max-xl:-top-[3%] z-10 max-lg:top-[-2%]"
+        className="w-full absolute 2xl:-top-[10%] top-[-8%] max-xl:-top-[3%] z-10 max-lg:top-[-2%]"
         src="/assets/images/sunset-club-top-layer.webp"
         alt="layer"
       />

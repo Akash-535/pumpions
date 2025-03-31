@@ -9,7 +9,7 @@ import Marquee from "react-fast-marquee";
 
 const LookFamiliar = () => {
   return (
-    <div className="min-h-[1105px] bg-[url(/assets/images/familier-bg.webp)] bg-cover bg-bottom bg-no-repeat flex items-center justify-end pb-[158.8px] flex-col max-lg:pb-[148px] max-md:justify-center max-lg:min-h-screen max-md:pb-[68px] overflow-hidden">
+    <div className="min-h-[1105px] bg-[url(/assets/images/familier-bg.webp)] bg-cover bg-bottom bg-no-repeat flex items-center justify-end pb-[158.8px] flex-col max-lg:pb-[148px] max-md:justify-center max-lg:min-h-screen max-md:pb-[68px] overflow-hidden max-w-[1920px] mx-auto">
       <div className="pb-[102px] max-lg:max-w-[770px] mx-auto max-lg:pb-[85px] pt-16 max-md:pb-12">
         <p className="text-xl leading-204 pb-5 text-white uppercase text-center max-md:text-base max-md:pb-3">
           PEAK AT THE SUNSET
