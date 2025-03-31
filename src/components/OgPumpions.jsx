@@ -13,59 +13,40 @@ const OgPumpions = () => {
   return (
     <div
       id="team"
-      className="max-w-[1135px] mx-auto flex justify-center items-center flex-col px-4 overflow-hidden"
+      className="max-w-[1135px] mx-auto flex justify-center items-center flex-col overflow-hidden"
     >
-      <h2 className="text-32 text-white leading-202 uppercase text-center max-md:text-2xl pb-[79px] max-lg:pb-[75px] max-md:pb-[30px]">
+      <h2 className="text-32 text-white leading-202 uppercase text-center px-4 max-md:text-2xl pb-[79px] max-lg:pb-[75px] max-md:pb-[30px]">
         OG PUMPIONS
       </h2>
-      <div className="w-full flex items-center justify-between flex-wrap max-lg:gap-11 max-md:hidden max-lg:max-w-[604px] mx-auto">
-        {OG_PUMPIONS_LIST.map((obj, i) => (
-          <div key={i} className="w-1/3 max-w-[226px]">
-            <Image
-              width={226}
-              height={208}
-              className="max-w-[226px]"
-              src={obj.image}
-              alt="og image"
-            />
-            <h4 className="text-white pt-[31px] leading-202 uppercase text-center text-2xl font-normal">
-              {obj.title}
-            </h4>
-            <p className="text-white opacity-70 text-base font-normal text-center pb-4 leading-202 uppercase">
-              {obj.about}
-            </p>
-            <div className="flex items-center justify-center gap-3">
-              <Link
-                target="_blank"
-                href="https://discord.com"
-                className="hover:-translate-y-1 duration-300 ease-linear"
-              >
-                <GradientDiscordIcon />
-              </Link>
-              <Link
-                target="_blank"
-                href="https://x.com"
-                className="hover:-translate-y-1 duration-300 ease-linear"
-              >
-                <GradientTwitterIcon />
-              </Link>
-            </div>
-          </div>
-        ))}
-      </div>
       <Swiper
         spaceBetween={24}
-        slidesPerView={1.5}
+        breakpoints={{
+          640: {
+            slidesPerView: 0.8,
+            spaceBetween: 4,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+          },
+        }}
         pagination={{ clickable: true }}
         modules={[Pagination]}
-        className="mySwiper md:!hidden !pb-16 !flex !items-center !justify-between max-lg:!gap-11 max-w-[390px] mx-auto"
+        className="mySwiper !flex !justify-center !items-center !pb-16 max-lg:max-w-[736px] max-md:max-w-[390px] mx-auto"
       >
         {OG_PUMPIONS_LIST.map((obj, i) => (
-          <SwiperSlide key={i} className="w-1/3 max-w-[226px]">
+          <SwiperSlide
+            key={i}
+            className="w-1/3 max-w-[226px] max-md:max-w-[260px]"
+          >
             <Image
               width={226}
               height={208}
-              className="max-w-[226px]"
+              className="max-w-[226px] max-md:max-w-[260px] mx-auto"
               src={obj.image}
               alt="og image"
             />
