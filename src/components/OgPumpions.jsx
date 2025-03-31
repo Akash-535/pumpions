@@ -18,7 +18,7 @@ const OgPumpions = () => {
       <h2 className="text-32 text-white leading-202 uppercase text-center max-md:text-2xl pb-[79px] max-lg:pb-[75px] max-md:pb-[30px]">
         OG PUMPIONS
       </h2>
-      <div className="w-full flex items-center justify-between flex-wrap max-lg:gap-11 max-md:hidden">
+      <div className="w-full flex items-center justify-between flex-wrap max-lg:gap-11 max-md:hidden max-lg:max-w-[604px] mx-auto">
         {OG_PUMPIONS_LIST.map((obj, i) => (
           <div key={i} className="w-1/3 max-w-[226px]">
             <Image
