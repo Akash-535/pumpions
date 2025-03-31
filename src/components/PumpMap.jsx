@@ -10,7 +10,7 @@ const PumpMap = () => {
         <Image
           width={407.36}
           height={374}
-          className="absolute w-full h-full max-w-[407.36px] max-h-[374px] max-sm:max-w-[333px] max-sm:min-h-[306px] max-sm:max-h-[306px]"
+          className="absolute w-full h-full max-w-[407.36px] max-h-[374px] max-sm:max-w-[333px] max-sm:min-h-[306px] max-sm:max-h-[306px] pointer-events-none"
           src="/assets/images/pumpmap-img-bg.webp"
           alt="pumpmap bg"
         />
@@ -36,5 +36,4 @@ const PumpMap = () => {
     </div>
   );
 };
-
 export default PumpMap;

@@ -29,7 +29,7 @@ const LookFamiliar = () => {
               key={i}
               width={175.14}
               height={193.2}
-              className="ml-[26px] max-md:max-w-[107.13px] max-md:w-full max-md:ml-4"
+              className="ml-[26px] max-md:max-w-[107.13px] max-md:w-full max-md:ml-4 pointer-events-none"
               src={obj}
               alt="img"
             />
@@ -41,7 +41,7 @@ const LookFamiliar = () => {
               key={i}
               width={175.14}
               height={193.2}
-              className="ml-[26px] max-md:max-w-[107.13px] max-md:w-full max-md:ml-4"
+              className="ml-[26px] max-md:max-w-[107.13px] max-md:w-full max-md:ml-4 pointer-events-none"
               src={obj}
               alt="img"
             />

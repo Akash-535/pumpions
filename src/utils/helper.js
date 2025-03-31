@@ -41,7 +41,7 @@ export const MEDIA_ICONS_LIST = [
   },
   {
     icon: <MediumIcon />,
-    link: "https://www.medium.com",
+    link: "https://magiceden.io/",
   },
 ];
 
@@ -56,7 +56,7 @@ export const MEDIA_ICONS_LIST_TWO = [
   },
   {
     icon: <MediumWhiteIcon />,
-    link: "https://www.medium.com",
+    link: "https://magiceden.io/",
   },
 ];
 

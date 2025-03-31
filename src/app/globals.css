@@ -2,8 +2,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-yellow-v1: #ffec37;
-  --color-dark-blue-v1: #28424f;
+  --color-yellow: #ffec37;
+  --color-dark-blue: #28424f;
   --color-orange-v1: #e8770e;
   --color-orange-v2: #fca32b;
 
@@ -12,6 +12,7 @@
 
   --leading-130: 130%;
   --leading-136: 136%;
+  --leading-153: 153%;
   --leading-202: 202%;
   --leading-204: 204%;
   --leading-229: 229%;

@@ -1,7 +1,7 @@
 import { PlusIcon } from "@/utils/icons";
 import React, { useState } from "react";
 
-const FAQ = () => {
+const PumpionsFaq = () => {
   const [open, setOpen] = useState(null);
   const FaqHandler = (index) => {
     setOpen(open === index ? null : index);
@@ -18,11 +18,11 @@ const FAQ = () => {
         {[...Array(5)].map((_, i) => (
           <div
             key={i}
-            className="w-full bg-[url(/assets/images/faq-content-bg.webp)] bg-cover bg-no-repeat bg-center pt-[15px] pb-2 px-[31px] max-md:px-[15px] max-md:pt-[7px] max-md:pb-1 flex items-center justify-center flex-col max-w-[735px] max-md:max-w-[343px]"
+            className="w-full flex items-center justify-center flex-col max-w-[735px] max-md:max-w-[343px]"
           >
             <div
               onClick={() => FaqHandler(i)}
-              className="flex w-full items-center justify-between cursor-pointer max-md:text-[9px] pb-[7px] max-md:pb-[3px]"
+              className="flex w-full items-center justify-between cursor-pointer max-md:text-[9px] bg-[url(/assets/images/faq-content-bg.webp)] bg-cover bg-no-repeat bg-center pt-[15px] pb-[15px] px-[31px] max-md:px-[15px] max-md:pt-[7px] max-md:pb-[7px] mb-1"
             >
               Aliquam eget libero vitae velit?{" "}
               <span
@@ -38,16 +38,13 @@ const FAQ = () => {
               </span>
             </div>
             <div
-              className={`duration-500 ease-linear overflow-hidden ${
-                open === i
-                  ? "max-h-[90px] h-full min-h-[90px] max-md:pb-2 max-md:min-h-9"
-                  : "max-h-0 min-h-0"
+              className={`duration-500 ease-linear overflow-hidden px-1 max-sm:max-w-[320px] ${
+                open === i ? "max-h-12 h-full" : "max-h-0 min-h-0"
               }`}
             >
-              <p className="text-sm max-md:text-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Explicabo iusto iste tempora qui temporibus nobis dignissimos
-                exercitationem commodi soluta aperiam!
+              <p className="text-sm max-md:text-6 text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                ullam perspiciatis porro culpa sapiente.
               </p>
             </div>
           </div>
@@ -57,4 +54,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default PumpionsFaq;

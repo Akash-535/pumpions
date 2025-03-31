@@ -13,7 +13,7 @@ const ClubMembership = () => {
       <Image
         width={1920}
         height={147}
-        className="w-full absolute 2xl:-top-[10%] top-[-8%] max-xl:-top-[3%] z-10 max-lg:top-[-2%]"
+        className="w-full absolute 2xl:-top-[10%] top-[-8%] max-xl:-top-[3%] z-10 max-lg:top-[-2%] pointer-events-none"
         src="/assets/images/sunset-club-top-layer.webp"
         alt="layer"
       />
@@ -26,11 +26,11 @@ const ClubMembership = () => {
           text="SUNSET CLUB MEMBERSHIP PERKS"
         />
       </div>
-      <div className="pt-[125px] flex items-center gap-7 max-xl:gap-6 max-w-[1440px] mx-auto max-xl:flex-wrap max-xl:justify-center max-xl:px-8 max-xl:pt-[25px] max-md:px-4">
+      <div className="pt-[125px] flex items-center gap-7 max-xl:gap-6 max-w-[1440px] mx-auto max-xl:flex-wrap max-xl:justify-center max-xl:px-8 max-xl:pt-[25px] max-md:px-0">
         <Image
           width={892}
           height={446}
-          className="max-xl:max-w-[770px] max-xl:w-full"
+          className="max-xl:max-w-[770px] max-xl:w-full pointer-events-none"
           src="/assets/images/clubhouse.webp"
           alt="club house"
         />
@@ -44,11 +44,15 @@ const ClubMembership = () => {
                 <Image
                   width={48}
                   height={49}
-                  className="max-w-12"
+                  className="max-w-12 pointer-events-none"
                   src={obj.icon}
                   alt="icons"
                 />
-                <p className="text-center text-xs leading-204 pt-[18px] max-xl:text-base">
+                <p
+                  className={`text-center text-xs pt-[18px] max-xl:text-base uppercase ${
+                    i === 0 ? "leading-204" : "leading-153"
+                  }`}
+                >
                   {obj.title}
                 </p>
                 <p className="opacity-70 text-6 text-center pt-1 leading-204 max-xl:text-[10px]">
@@ -61,7 +65,7 @@ const ClubMembership = () => {
         <Swiper
           spaceBetween={24}
           slidesPerView={1.2}
-          pagination={true}
+          pagination={{ clickable: true }}
           modules={[Pagination]}
           className="mySwiper md:!hidden !pb-9"
         >

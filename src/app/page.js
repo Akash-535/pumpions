@@ -2,11 +2,11 @@
 import BackToTop from "@/common/BackToTop";
 import Footer from "@/common/Footer";
 import ClubMembership from "@/components/ClubMembership";
-import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import LookFamiliar from "@/components/LookFamiliar";
 import MeetPumpions from "@/components/MeetPumpions";
 import OgPumpions from "@/components/OgPumpions";
+import PumpionsFaq from "@/components/PumpionsFaq";
 import PumpMap from "@/components/PumpMap";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <ClubMembership />
       <PumpMap />
       <OgPumpions />
-      <FAQ />
+      <PumpionsFaq />
       <Footer />
       <BackToTop />
     </>

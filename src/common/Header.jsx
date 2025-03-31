@@ -33,7 +33,7 @@ const Header = () => {
             />
           </Link>
           <div
-            className={`flex items-center gap-8 max-lg:flex-col max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:top-0 max-lg:h-full max-lg:bg-dark-blue-v1 duration-300 ease-linear max-md:z-20 ${
+            className={`flex items-center gap-8 max-lg:flex-col max-lg:justify-center max-lg:fixed max-lg:w-full max-lg:top-0 max-lg:h-full max-lg:bg-dark-blue duration-300 ease-linear max-md:z-20 ${
               open ? "max-lg:right-0" : "max-lg:-right-full"
             }`}
           >
@@ -42,7 +42,7 @@ const Header = () => {
                 onClick={() => setOpen(false)}
                 key={i}
                 href={obj.link}
-                className="relative pb-0.5 leading-130 font-normal text-base uppercase after:absolute after:content-'' after:h-[5px] after:-bottom-0.5 after:left-0 after:bg-yellow-v1 after:w-0 hover:after:w-full after:duration-300 after:ease-linear max-lg:text-white"
+                className="relative pb-0.5 leading-130 font-normal text-base uppercase after:absolute after:content-'' after:h-[5px] after:-bottom-0.5 after:left-0 after:bg-yellow after:w-0 hover:after:w-full after:duration-300 after:ease-linear max-lg:text-white"
               >
                 {obj.title}
               </Link>
@@ -68,6 +68,7 @@ const Header = () => {
               <Link
                 key={i}
                 href={obj.link}
+                target="_blank"
                 className="hover:-translate-y-1 duration-300 ease-linear"
               >
                 {obj.icon}
@@ -79,19 +80,19 @@ const Header = () => {
             className="flex flex-col gap-1.5 justify-center items-end cursor-pointer lg:hidden relative z-30"
           >
             <span
-              className={`w-[42.75px] h-1.5 duration-300 ease-linear ${
+              className={`w-[42.75px] h-1 max-sm:h-0.5 max-sm:w-[36px] duration-300 ease-linear ${
                 open ? " rotate-45 translate-y-[11px] bg-white" : "bg-black"
               }`}
             ></span>
             <span
-              className={`w-[42.75px] bg-black h-1.5 duration-300 ease-linear ${
+              className={`w-[42.75px] bg-black h-1 max-sm:h-0.5 max-sm:w-[36px] duration-300 ease-linear ${
                 open && "translate-x-4 opacity-0"
               } `}
             ></span>
             <span
-              className={`w-[21.35px] h-1.5 duration-300 ease-linear ${
+              className={`w-[21.35px] h-1 max-sm:h-0.5 max-sm:w-[18px] duration-300 ease-linear ${
                 open
-                  ? "-rotate-45 -translate-y-3 w-[42.75px] bg-white"
+                  ? "-rotate-[46deg] -translate-y-2 w-[42.75px] max-sm:w-[36px] max-sm:-translate-y-1.5 bg-white"
                   : "bg-black"
               }`}
             ></span>

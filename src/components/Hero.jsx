@@ -10,14 +10,14 @@ const Hero = () => {
       <Image
         width={166.34}
         height={85}
-        className="absolute left-5 top-[17%] pointer-events-none max-lg:left-[-9%] max-lg:top-[15%] max-md:-left-[30%] max-md:top-[13%]"
+        className="absolute left-5 top-[17%] max-xl:-left-20 max-xl:top-[15%] pointer-events-none max-lg:left-[-11%] max-lg:top-[15%] max-md:-left-[30%] max-md:top-[13%]"
         src="/assets/images/cloud.webp"
         alt="cloud img"
       />
       <Image
         width={152.65}
         height={78}
-        className="absolute right-5 top-[15%] pointer-events-none max-lg:right-0 max-lg:h-14 max-lg:w-[108px] max-md:-right-[15%]"
+        className="absolute right-5 top-[15%] max-xl:top-[17%] max-xl:-right-5 pointer-events-none max-lg:right-0 max-lg:h-14 max-lg:w-[108px] max-md:-right-[15%]"
         src="/assets/images/cloud.webp"
         alt="cloud img"
       />
@@ -28,7 +28,7 @@ const Hero = () => {
         <Image
           width={890}
           height={225.72}
-          className="max-lg:max-w-[612px] max-lg:w-full max-md:max-w-[282px]"
+          className="max-lg:max-w-[612px] max-lg:w-full max-md:max-w-[282px] pointer-events-none"
           src="/assets/images/pumpions-heading-text.webp"
           alt="heading text"
         />

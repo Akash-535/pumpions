@@ -7,7 +7,7 @@ const MeetPumpions = () => {
   return (
     <div
       id="about"
-      className="max-w-[1140px] mx-auto pt-[150px] max-xl:pt-32 max-lg:pt-[101px] max-md:pt-5 pb-11 max-lg:pb-[84px] max-md:pb-[42px] flex justify-center items-center max-lg:px-8 max-md:px-4"
+      className="max-w-[1140px] mx-auto pt-[150px] max-xl:pt-32 max-lg:pt-[101px] max-md:pt-5 pb-11 max-lg:pb-[84px] max-md:pb-[42px] flex justify-center items-center max-xl:px-8 max-md:px-4"
     >
       <div className="w-full min-h-[333px] relative z-[1] flex items-center justify-center max-lg:min-h-[318px] max-md:min-h-[530px]">
         <Image
@@ -15,7 +15,14 @@ const MeetPumpions = () => {
           height={333}
           src="/assets/images/meet-pumpions-bg.webp"
           alt="img bg"
-          className="absolute min-h-[333px] w-full max-lg:min-h-[318px] max-md:min-h-[530px]"
+          className="absolute min-h-[333px] w-full max-lg:min-h-[318px] pointer-events-none max-md:hidden"
+        />
+        <Image
+          width={9999}
+          height={333}
+          src="/assets/images/meet-pumpions-md-bg.webp"
+          alt="img bg"
+          className="absolute max-h-[530px] min-h-[530px] pointer-events-none md:hidden"
         />
         <div className="max-w-[1046px] w-full mx-auto text-center text-white relative z-10 px-3 max-md:px-[18px] max-md:pb-6 max-md:pt-[26px]">
           <Heading
