@@ -26,7 +26,7 @@ const PumpionsFaq = () => {
             >
               Aliquam eget libero vitae velit?{" "}
               <span
-                className={`size-[41px] max-md:size-[19.13px] rounded-full flex items-center justify-center bg-gradient-to-b from-orange-v1 to-orange-v2 duration-300 ease-linear faq-icon ${
+                className={`size-[41px] max-md:size-[19.13px] rounded-full flex items-center justify-center bg-gradient-to-b from-orange-v1 to-orange-v2 duration-500 ease-linear faq-icon ${
                   open === i ? "rotate-180" : "rotate-0"
                 } `}
               >
