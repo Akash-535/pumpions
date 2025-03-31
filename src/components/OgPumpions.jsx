@@ -46,7 +46,7 @@ const OgPumpions = () => {
             <Image
               width={226}
               height={208}
-              className="max-w-[226px] max-md:max-w-[260px] mx-auto"
+              className="max-w-[226px] max-md:max-w-[260px] mx-auto pointer-events-none"
               src={obj.image}
               alt="og image"
             />

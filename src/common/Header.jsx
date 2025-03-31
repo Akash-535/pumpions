@@ -80,19 +80,21 @@ const Header = () => {
             className="flex flex-col gap-1.5 justify-center items-end cursor-pointer lg:hidden relative z-30"
           >
             <span
-              className={`w-[42.75px] h-1 max-sm:h-0.5 max-sm:w-[36px] duration-300 ease-linear ${
-                open ? " rotate-45 translate-y-[11px] bg-white" : "bg-black"
+              className={`w-[42.75px] h-1 max-sm:w-[34px] duration-300 ease-linear ${
+                open
+                  ? " rotate-45 translate-y-[11px] bg-white max-sm:translate-y-3.5"
+                  : "bg-black"
               }`}
             ></span>
             <span
-              className={`w-[42.75px] bg-black h-1 max-sm:h-0.5 max-sm:w-[36px] duration-300 ease-linear ${
+              className={`w-[42.75px] bg-black h-1 max-sm:w-[34px] duration-300 ease-linear ${
                 open && "translate-x-4 opacity-0"
               } `}
             ></span>
             <span
-              className={`w-[21.35px] h-1 max-sm:h-0.5 max-sm:w-[18px] duration-300 ease-linear ${
+              className={`w-[21.35px] h-1 max-sm:w-[17px] duration-300 ease-linear ${
                 open
-                  ? "-rotate-[46deg] -translate-y-2 w-[42.75px] max-sm:w-[36px] max-sm:-translate-y-1.5 bg-white"
+                  ? "-rotate-[46deg] -translate-y-2 w-[42.75px] max-sm:w-[34px] max-sm:-translate-y-1.5 bg-white"
                   : "bg-black"
               }`}
             ></span>
