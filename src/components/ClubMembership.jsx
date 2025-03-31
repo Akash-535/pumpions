@@ -64,7 +64,7 @@ const ClubMembership = () => {
         </div>
         <Swiper
           spaceBetween={24}
-          slidesPerView={1.2}
+          slidesPerView={1.29}
           pagination={{ clickable: true }}
           modules={[Pagination]}
           className="mySwiper md:!hidden !pb-9"

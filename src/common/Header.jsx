@@ -17,7 +17,7 @@ const Header = () => {
       <Image
         width={10000}
         height={76.19}
-        className="min-h-[76.19px] absolute w-full max-md:min-h-[56px]"
+        className="min-h-[76.19px] absolute w-full max-md:min-h-[56px] max-sm:min-h-[45px]"
         src="/assets/images/header-bg.webp"
         alt="header img"
       />
